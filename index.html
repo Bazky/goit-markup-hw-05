@@ -17,49 +17,53 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="header-container">
-          <nav>
-            <ul class="menu">
-              <li>
-                <a class="logo" href="./index.html"
-                  ><p><span class="web">Web</span>Studio</p></a
-                >
+      <div class="background-header">
+        <div class="container">
+          <div class="header-container">
+            <nav>
+              <ul class="menu">
+                <li>
+                  <a class="logo" href="./index.html"
+                    ><p><span class="web">Web</span>Studio</p></a
+                  >
+                </li>
+
+                <li>
+                  <a class="change-site" href="./index.html"
+                    ><span class="studio">Studio</span></a
+                  >
+                </li>
+
+                <li>
+                  <a class="change-site" href="./portfolio.html"
+                    ><span>Portfolio</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="change-site" href="#"> Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="menu-links">
+              <li class="mail-hover">
+                <a class="adress" href="info@devstudio.com" target="_blank">
+                  <svg class="mail-icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </li>
 
-              <li>
-                <a class="change-site" href="./index.html"
-                  ><span class="margin-studio">Studio</span></a
+              <li class="phone-hover">
+                <a class="adress" href="+380961111111" target="_blank"
+                  ><svg class="phone-icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
                 >
-              </li>
-
-              <li>
-                <a class="change-site" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li>
-                <a class="change-site" href="#"> Contacts</a>
               </li>
             </ul>
-          </nav>
-          <ul class="menu-links">
-            <li class="mail-hover">
-              <a class="adress" href="info@devstudio.com" target="_blank">
-                <svg class="mail-icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-
-            <li class="phone-hover">
-              <a class="adress" href="+380961111111" target="_blank"
-                ><svg class="phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -141,8 +145,13 @@
                   alt="person writing on computer"
                   height="294"
                 />
+
+                <figcaption class="whatwedo-description">
+                  <h5>DESKTOP APPS</h5>
+                </figcaption>
               </figure>
             </li>
+
             <li>
               <figure class="figure">
                 <img
@@ -150,6 +159,9 @@
                   alt="person working on laptop"
                   height="294"
                 />
+                <figcaption class="whatwedo-description">
+                  <h5>MOBILE APPS</h5>
+                </figcaption>
               </figure>
             </li>
             <li>
@@ -159,6 +171,9 @@
                   alt="person working on tablet"
                   height="294"
                 />
+                <figcaption class="whatwedo-description">
+                  <h5>DESIGN SOLUTIONS</h5>
+                </figcaption>
               </figure>
             </li>
           </ul>
