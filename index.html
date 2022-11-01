@@ -71,7 +71,17 @@
       <div class="container">
         <div class="main-text-container">
           <h1 class="main-text">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button class="button" type="button">Request our service</button>
+
+          <a class="button" href="#" data-modal-open
+            ><button class="buttonjs" type="button">
+              Request our service
+            </button></a
+          >
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-btn" data-modal-close><span>X</span></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -341,12 +351,13 @@
               <use href="./images/icons.svg#icon-Logoone"></use>
             </svg>
           </li>
-
-          <li class="regular-customer-border">
-            <svg class="regular-customer-icon" width="106" height="60">
-              <use href="./images/icons.svg#icon-Logotwo"></use>
-            </svg>
-          </li>
+          <div class="regular-customer-border">
+            <li>
+              <svg class="regular-customer-icon" width="106" height="60">
+                <use href="./images/icons.svg#icon-Logotwo"></use>
+              </svg>
+            </li>
+          </div>
 
           <li class="regular-customer-border">
             <svg class="regular-customer-icon" width="106" height="60">
@@ -427,5 +438,6 @@
         </footer>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
