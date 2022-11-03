@@ -13,6 +13,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--black);
   background-color: var(--white);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 *,
@@ -31,7 +33,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -90,10 +92,8 @@ ul {
 }
 
 .mail-icon {
-  margin: auto;
-  position: relative;
-  right: 10px;
-  top: 1px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 .mail-hover {
   fill: var(--grey);
@@ -103,10 +103,8 @@ ul {
   fill: var(--lightblue);
 }
 .phone-icon {
-  margin: auto;
-  position: relative;
-  right: 10px;
-  top: 3px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 .phone-hover {
   fill: var(--grey);
@@ -181,6 +179,8 @@ ul {
   margin-left: 93px;
 }
 .adress {
+  display: flex;
+  align-items: center;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -202,6 +202,7 @@ ul {
 .background-main-text {
   background-size: cover;
   max-width: 1600px;
+  height: 600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(255, 255, 255, 0)
@@ -209,13 +210,8 @@ ul {
     url(../images/mainwallpaper.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: transparent;
-  margin: auto;
-}
-
-.main-text-container {
-  box-sizing: border-box;
-  background-position: center;
+  background-color: var(--client-borders);
+  margin: 0 auto;
   padding: 200px 0;
 }
 
@@ -226,7 +222,8 @@ ul {
   line-height: 1.25;
   text-align: center;
   color: var(--white);
-  padding: 0 250px;
+  width: 696px;
+  margin: 0 auto;
 }
 .button {
   font-family: inherit;
@@ -366,14 +363,11 @@ ul {
 /* team section */ /* team section */ /* team section */ /* team section */ /* team section */ /* team section */
 
 .background-team {
-  box-sizing: border-box;
   background-color: var(--lightgrey);
+  padding: 94px 0;
 }
-.team-container {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.team-padding {
+  padding: 25px 0;
 }
 .photo-team {
   display: flex;
@@ -386,9 +380,7 @@ ul {
   flex-wrap: wrap;
 }
 .photo-border-team {
-  border: 1px;
   width: 270px;
-  height: 428px;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -396,25 +388,23 @@ ul {
 }
 .team-icon {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin: 30px 40px;
-  fill: var(--client-borders);
+  justify-content: center;
+  gap: 10px;
 }
 
 .team-border-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  padding-top: 10px;
+  fill: var(--client-borders);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-border-icon:hover {
   background-color: var(--lightblue);
   fill: var(--white);
-  padding-top: 10px;
 }
 .photo-header-studio {
   font-size: 16px;

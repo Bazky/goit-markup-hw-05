@@ -67,24 +67,22 @@
         </div>
       </div>
     </header>
-    <div class="background-main-text">
+    <section class="background-main-text">
       <div class="container">
-        <div class="main-text-container">
-          <h1 class="main-text">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+        <h1 class="main-text">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
 
-          <a class="button" href="#" data-modal-open
-            ><button class="buttonjs" type="button">
-              Request our service
-            </button></a
-          >
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="modal-btn" data-modal-close><span>X</span></button>
-            </div>
+        <a class="button" href="#" data-modal-open
+          ><button class="buttonjs" type="button">
+            Request our service
+          </button></a
+        >
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-btn" data-modal-close><span>X</span></button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <main>
       <div class="container">
@@ -148,43 +146,82 @@
         <section class="section">
           <h2 class="section-headers">What we do</h2>
           <ul class="whatwedo-container">
-            <li>
-              <figure class="figure">
-                <img
-                  src="./images/tablet.jpg"
-                  alt="person writing on computer"
-                  height="294"
-                />
+            <li class="figure">
+              <img
+                src="./images/tablet.jpg"
+                alt="person writing on computer"
+                height="294"
+                style="display: block"
+              />
 
-                <figcaption class="whatwedo-description">
-                  <h5>DESKTOP APPS</h5>
-                </figcaption>
-              </figure>
+              <p
+                style="
+                  display: flex;
+                  position: absolute;
+                  background: rgba(47, 48, 58, 0.8);
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  height: 70px;
+                  bottom: 0;
+                  color: var(--white);
+                  font-weight: 700;
+                  font-size: inherit;
+                "
+              >
+                DESKTOP APPS
+              </p>
             </li>
 
-            <li>
-              <figure class="figure">
-                <img
-                  src="./images/laptop.jpg"
-                  alt="person working on laptop"
-                  height="294"
-                />
-                <figcaption class="whatwedo-description">
-                  <h5>MOBILE APPS</h5>
-                </figcaption>
-              </figure>
+            <li class="figure">
+              <img
+                src="./images/laptop.jpg"
+                alt="person working on laptop"
+                height="294"
+                style="display: block"
+              />
+              <p
+                style="
+                  display: flex;
+                  position: absolute;
+                  background: rgba(47, 48, 58, 0.8);
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  height: 70px;
+                  bottom: 0;
+                  color: var(--white);
+                  font-weight: 700;
+                  font-size: inherit;
+                "
+              >
+                MOBILE APPS
+              </p>
             </li>
-            <li>
-              <figure class="figure">
-                <img
-                  src="./images/tabletmac.jpg"
-                  alt="person working on tablet"
-                  height="294"
-                />
-                <figcaption class="whatwedo-description">
-                  <h5>DESIGN SOLUTIONS</h5>
-                </figcaption>
-              </figure>
+            <li class="figure">
+              <img
+                src="./images/tabletmac.jpg"
+                alt="person working on tablet"
+                height="294"
+                style="display: block"
+              />
+              <p
+                style="
+                  display: flex;
+                  position: absolute;
+                  background: rgba(47, 48, 58, 0.8);
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  height: 70px;
+                  bottom: 0;
+                  color: var(--white);
+                  font-weight: 700;
+                  font-size: inherit;
+                "
+              >
+                DESIGN SOLUTIONS
+              </p>
             </li>
           </ul>
         </section>
@@ -192,153 +229,154 @@
 
       <div class="background-team">
         <div class="container">
-          <div class="team-container">
-            <section class="section">
-              <h2 class="section-headers">Our Team</h2>
-              <ul class="photo-team">
-                <li class="photo-border-team">
-                  <figure class="figure">
-                    <img
-                      src="./images/christopherwalker.jpg"
-                      alt="men in brown shirt"
-                      height="260"
-                    />
-                  </figure>
-                  <p class="photo-header-studio">
-                    <strong>Christopher Walker</strong>
-                  </p>
-                  <p>Product Designer</p>
-                  <div class="team-icon">
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </li>
-                <li class="photo-border-team">
-                  <figure class="figure">
-                    <img
-                      src="./images/kylieevans.jpg"
-                      alt="women in blue shirt"
-                      height="260"
-                    />
-                  </figure>
-                  <p class="photo-header-studio">
-                    <strong>Kylie Evans</strong>
-                  </p>
-                  <p>Frontend Developer</p>
-                  <div class="team-icon">
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </li>
-                <li class="photo-border-team">
-                  <figure class="figure">
-                    <img
-                      src="./images/ryanharris.jpg"
-                      alt="men in white shirt"
-                      height="260"
-                    />
-                  </figure>
-                  <p class="photo-header-studio">
-                    <strong>Ryan Harris</strong>
-                  </p>
-                  <p>Marketing</p>
-                  <div class="team-icon">
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </li>
-                <li class="photo-border-team">
-                  <figure class="figure">
-                    <img
-                      src="./images/tylermoore.jpg"
-                      alt="men in black t-shirt"
-                      height="260"
-                    />
-                  </figure>
-                  <p class="photo-header-studio">
-                    <strong>Tyler Moore</strong>
-                  </p>
-                  <p>UI Designer</p>
-                  <div class="team-icon">
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </div>
-                    <div class="team-border-icon">
-                      <svg width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </section>
-          </div>
+          <h2 class="section-headers">Our Team</h2>
+          <ul class="photo-team">
+            <li class="photo-border-team">
+              <img
+                src="./images/christopherwalker.jpg"
+                alt="men in brown shirt"
+                height="260"
+              />
+              <div class="team-padding">
+                <p class="photo-header-studio">
+                  <strong>Christopher Walker</strong>
+                </p>
+                <p>Product Designer</p>
+
+                <ul class="team-icon">
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="photo-border-team">
+              <img
+                src="./images/kylieevans.jpg"
+                alt="women in blue shirt"
+                height="260"
+              />
+
+              <div class="team-padding">
+                <p class="photo-header-studio">
+                  <strong>Kylie Evans</strong>
+                </p>
+                <p>Frontend Developer</p>
+                <ul class="team-icon">
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="photo-border-team">
+              <img
+                src="./images/ryanharris.jpg"
+                alt="men in white shirt"
+                height="260"
+              />
+
+              <div class="team-padding">
+                <p class="photo-header-studio">
+                  <strong>Ryan Harris</strong>
+                </p>
+                <p>Marketing</p>
+                <ul class="team-icon">
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="photo-border-team">
+              <img
+                src="./images/tylermoore.jpg"
+                alt="men in black t-shirt"
+                height="260"
+              />
+
+              <div class="team-padding">
+                <p class="photo-header-studio">
+                  <strong>Tyler Moore</strong>
+                </p>
+                <p>UI Designer</p>
+                <ul class="team-icon">
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </li>
+                  <li class="team-border-icon">
+                    <svg width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
