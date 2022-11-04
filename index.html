@@ -16,77 +16,69 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header>
-      <div class="background-header">
-        <div class="container">
-          <div class="header-container">
-            <nav>
-              <ul class="menu">
-                <li>
-                  <a class="logo" href="./index.html"
-                    ><p><span class="web">Web</span>Studio</p></a
-                  >
-                </li>
+    <header class="background-header">
+      <div class="container header-container">
+        <nav style="display: flex; align-items: center">
+          <a class="logo" href="./index.html"
+            ><p><span class="web">Web</span>Studio</p></a
+          >
+          <ul class="menu">
+            <li>
+              <a class="change-site" href="./index.html"
+                ><span class="studio">Studio</span></a
+              >
+            </li>
 
-                <li>
-                  <a class="change-site" href="./index.html"
-                    ><span class="studio">Studio</span></a
-                  >
-                </li>
+            <li>
+              <a class="change-site" href="./portfolio.html"
+                ><span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a class="change-site" href="#"> Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="menu-links">
+          <li class="mail-hover">
+            <a class="adress" href="info@devstudio.com" target="_blank">
+              <svg class="mail-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
 
-                <li>
-                  <a class="change-site" href="./portfolio.html"
-                    ><span>Portfolio</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="change-site" href="#"> Contacts</a>
-                </li>
-              </ul>
-            </nav>
-            <ul class="menu-links">
-              <li class="mail-hover">
-                <a class="adress" href="info@devstudio.com" target="_blank">
-                  <svg class="mail-icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-
-              <li class="phone-hover">
-                <a class="adress" href="+380961111111" target="_blank"
-                  ><svg class="phone-icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+          <li class="phone-hover">
+            <a class="adress" href="+380961111111" target="_blank"
+              ><svg class="phone-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
-    <section class="background-main-text">
-      <div class="container">
-        <h1 class="main-text">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+    <main>
+      <section class="background-main-text">
+        <div class="container">
+          <h1 class="main-text">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
 
-        <a class="button" href="#" data-modal-open
-          ><button class="buttonjs" type="button">
+          <button class="buttonjs" type="button" data-modal-open>
             Request our service
-          </button></a
-        >
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button class="modal-btn" data-modal-close><span>X</span></button>
+          </button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-btn" data-modal-close><span>X</span></button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <main>
-      <div class="container">
-        <div class="description-border">
+      <section class="section">
+        <div class="container">
           <ul class="description">
             <li>
               <div class="description-border-icon">
@@ -140,7 +132,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
       <div class="container">
         <section class="section">
@@ -227,7 +219,7 @@
         </section>
       </div>
 
-      <div class="background-team">
+      <section class="background-team">
         <div class="container">
           <h2 class="section-headers">Our Team</h2>
           <ul class="photo-team">
@@ -378,10 +370,10 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </main>
-    <div class="container">
-      <section class="section">
+    <section class="section">
+      <div class="container">
         <h2 class="section-headers">Regular Customers</h2>
         <ul class="regular-customer">
           <li class="regular-customer-border">
@@ -421,8 +413,8 @@
             </svg>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
     <div class="background-footer">
       <div class="container">
         <footer class="footer-container">
