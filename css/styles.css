@@ -296,13 +296,12 @@ img {
   justify-content: center;
   margin: 25px 100px;
 }
-
+/* 
 .margin-punctuality {
   height: 261px;
-}
+} */
 .description-header {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--black);
@@ -315,7 +314,6 @@ img {
   justify-content: space-between;
   text-align: start;
   gap: 30px;
-  font-size: 14px;
   line-height: 2em;
   letter-spacing: 0.03em;
   color: var(--grey);
@@ -421,14 +419,7 @@ img {
   align-items: center;
   margin-bottom: 10px;
 }
-.team-focus {
-  text-decoration: none;
-  padding: 30px 0;
-}
-.team-focus:focus {
-  text-decoration: none;
-  padding: 30px 0;
-}
+
 /* team section */ /* team section */ /* team section */ /* team section */ /* team section */ /* team section */
 
 /* regular customer section */ /* regular customer section */ /* regular customer section */ /* regular customer section */
@@ -452,6 +443,9 @@ img {
 }
 
 .regular-customer-border:hover {
+  color: var(--lightblue);
+}
+.regular-customer-border:focus {
   color: var(--lightblue);
 }
 .regular-customer-icon {
@@ -503,9 +497,14 @@ img {
   height: 44px;
   background-color: var(--social-links-footer);
   border-radius: 50px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--white);
 }
 .footer-border-icon:hover {
+  background-color: var(--lightblue);
+  transition: 250ms;
+}
+.footer-border-icon:focus {
   background-color: var(--lightblue);
   transition: 250ms;
 }
@@ -547,6 +546,12 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.button-one:focus {
+  background-color: var(--lightblue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .button-two {
   background-color: var(--lightgrey);
@@ -560,6 +565,12 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-two:hover {
+  background-color: var(--lightblue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-two:focus {
   background-color: var(--lightblue);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -582,6 +593,12 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.button-three:focus {
+  background-color: var(--lightblue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .button-four {
   background-color: var(--lightgrey);
   color: var(--black);
@@ -599,6 +616,12 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.button-four:focus {
+  background-color: var(--lightblue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .button-five {
   background-color: var(--lightgrey);
   color: var(--black);
@@ -611,6 +634,12 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-five:hover {
+  background-color: var(--lightblue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-five:focus {
   background-color: var(--lightblue);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -665,7 +694,10 @@ img {
   text-decoration: none;
   color: inherit;
 }
-
+.over:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .over:hover .overlay {
   transform: translateY(0);
 }
