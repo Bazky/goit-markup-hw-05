@@ -18,7 +18,7 @@
   <body>
     <header class="background-header">
       <div class="container header-container">
-        <nav style="display: flex; align-items: center">
+        <nav class="nav">
           <a class="logo" href="./index.html"
             ><p><span class="web">Web</span>Studio</p></a
           >
@@ -82,9 +82,11 @@
           <ul class="description">
             <li>
               <div class="description-border-icon">
-                <svg class="description-icon" width="70" height="70">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
+                <a href="#" class="description-focus">
+                  <svg class="description-icon" width="70" height="70">
+                    <use href="./images/icons.svg#icon-antenna"></use>
+                  </svg>
+                </a>
               </div>
               <h3 class="description-header">ATTENTION TO DETAILS</h3>
               <p>
@@ -95,9 +97,11 @@
 
             <li class="margin-punctuality">
               <div class="description-border-icon">
-                <svg class="description-icon" width="70" height="70">
-                  <use href="./images/icons.svg#icon-clock"></use>
-                </svg>
+                <a href="#" class="description-focus">
+                  <svg class="description-icon" width="70" height="70">
+                    <use href="./images/icons.svg#icon-clock"></use>
+                  </svg>
+                </a>
               </div>
               <h3 class="description-header">PUNCTUALITY</h3>
               <p>
@@ -108,9 +112,11 @@
 
             <li>
               <div class="description-border-icon">
-                <svg class="description-icon" width="70" height="70">
-                  <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
+                <a href="#" class="description-focus">
+                  <svg class="description-icon" width="70" height="70">
+                    <use href="./images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </a>
               </div>
               <h3 class="description-header">PLANNING</h3>
               <p>
@@ -120,9 +126,11 @@
             </li>
             <li>
               <div class="description-border-icon">
-                <svg class="description-icon" width="70" height="70">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
-                </svg>
+                <a href="#" class="description-focus">
+                  <svg class="description-icon" width="70" height="70">
+                    <use href="./images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </a>
               </div>
               <h3 class="description-header">MODERN TECHNOLOGIES</h3>
               <p>
@@ -134,90 +142,45 @@
         </div>
       </section>
 
-      <div class="container">
-        <section class="section">
+      <section class="section">
+        <div class="container">
           <h2 class="section-headers">What we do</h2>
           <ul class="whatwedo-container">
-            <li class="figure">
-              <img
-                src="./images/tablet.jpg"
-                alt="person writing on computer"
-                height="294"
-                style="display: block"
-              />
+            <li class="whatwedo-position">
+              <a href="#" class="whatwedo-focus">
+                <img
+                  src="./images/tablet.jpg"
+                  alt="person writing on computer"
+                  height="294"
+                />
 
-              <p
-                style="
-                  display: flex;
-                  position: absolute;
-                  background: rgba(47, 48, 58, 0.8);
-                  justify-content: center;
-                  align-items: center;
-                  width: 100%;
-                  height: 70px;
-                  bottom: 0;
-                  color: var(--white);
-                  font-weight: 700;
-                  font-size: inherit;
-                "
-              >
-                DESKTOP APPS
-              </p>
+                <p class="whatwedo-description">DESKTOP APPS</p>
+              </a>
             </li>
 
-            <li class="figure">
-              <img
-                src="./images/laptop.jpg"
-                alt="person working on laptop"
-                height="294"
-                style="display: block"
-              />
-              <p
-                style="
-                  display: flex;
-                  position: absolute;
-                  background: rgba(47, 48, 58, 0.8);
-                  justify-content: center;
-                  align-items: center;
-                  width: 100%;
-                  height: 70px;
-                  bottom: 0;
-                  color: var(--white);
-                  font-weight: 700;
-                  font-size: inherit;
-                "
-              >
-                MOBILE APPS
-              </p>
+            <li class="whatwedo-position">
+              <a href="#" class="whatwedo-focus">
+                <img
+                  src="./images/laptop.jpg"
+                  alt="person working on laptop"
+                  height="294"
+                />
+                <p class="whatwedo-description">MOBILE APPS</p>
+              </a>
             </li>
-            <li class="figure">
-              <img
-                src="./images/tabletmac.jpg"
-                alt="person working on tablet"
-                height="294"
-                style="display: block"
-              />
-              <p
-                style="
-                  display: flex;
-                  position: absolute;
-                  background: rgba(47, 48, 58, 0.8);
-                  justify-content: center;
-                  align-items: center;
-                  width: 100%;
-                  height: 70px;
-                  bottom: 0;
-                  color: var(--white);
-                  font-weight: 700;
-                  font-size: inherit;
-                "
-              >
-                DESIGN SOLUTIONS
-              </p>
+            <li class="whatwedo-position">
+              <a href="#" class="whatwedo-focus">
+                <img
+                  src="./images/tabletmac.jpg"
+                  alt="person working on tablet"
+                  height="294"
+                />
+                <p class="whatwedo-description">DESIGN SOLUTIONS</p>
+              </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section class="background-team">
         <div class="container">
@@ -229,34 +192,36 @@
                 alt="men in brown shirt"
                 height="260"
               />
+
               <div class="team-padding">
                 <p class="photo-header-studio">
                   <strong>Christopher Walker</strong>
                 </p>
                 <p>Product Designer</p>
-
-                <ul class="team-icon">
-                  <li class="team-border-icon">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </li>
-                  <li class="team-border-icon">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </li>
-                  <li class="team-border-icon">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </li>
-                  <li class="team-border-icon">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </li>
-                </ul>
+                <a href="#" class="team-focus">
+                  <ul class="team-icon">
+                    <li class="team-border-icon">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </li>
+                    <li class="team-border-icon">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </li>
+                    <li class="team-border-icon">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </li>
+                    <li class="team-border-icon">
+                      <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </a>
               </div>
             </li>
 
