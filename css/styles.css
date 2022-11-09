@@ -276,7 +276,11 @@ img {
   border: 1px solid;
   background-color: var(--white);
   margin-left: 95%;
-  margin-top: -5px;
+  margin-top: -4px;
+}
+.x {
+  width: 11px;
+  height: 11px;
 }
 /* main background */ /* main background */ /* main background */ /* main background */
 
